@@ -1,0 +1,101 @@
+/*連結文字樣式*/
+a:link , a:visited{color:#ffffff;text-decoration: none}
+a:hover{color:#ffffff;background-color: #FFECD9 ; text-decoration: none;}
+
+/*全局*/
+.body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Serif TC', serif;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(2, 2, 2);
+  color: white;
+  font-size: 3vw;
+
+}
+/*字級*/
+.h1{
+    z-index: 99;
+    font-size:6vw;
+    text-shadow: 0em 0em 0.3em black
+}
+
+
+/*漢堡*/
+ul {
+  display: inline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 99;
+  }
+  
+  ul.漢堡 {
+    font-size: 6vw;
+  }
+  
+  ul.漢堡 li {
+
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  ul.漢堡>li:last-child {
+    border-right: none;
+  }
+  
+  ul.漢堡>li {
+    float: left;
+  }
+  
+  ul.漢堡 a {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 0.6em 0.5em;
+    text-decoration: none;
+    line-height: 1vw;
+  }
+  
+  ul.漢堡 ul {
+    position: absolute;
+    z-index: 99;
+    left: 2vw;
+    top:10vw;
+    font-size: 3vw;
+  }
+  
+  ul.漢堡 ul li {
+    display: inline;
+  }
+  
+  ul.漢堡 ul li:last-child {
+    border-bottom: none;
+  }
+  
+  ul.漢堡 ul {
+    display: none;
+  }
+  
+  ul.漢堡 li:hover>ul {
+    display: block;
+  }
+
+/*內容*/
+.內容{ 
+position: absolute;
+left:50% ;
+transform:translate(-50%) ; 
+/*偷來ㄉ*/
+
+
+
+
+}
+
+/*背景*/
+.背景{
+  z-index: -999;
+  width:100%;height:0px;position:relative;padding-bottom:56.250%
+}
